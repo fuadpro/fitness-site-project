@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@400;700&family=Open+Sans&display=swap');
+:root {
+    --green: #a1c927;
+    --red: #fd634d; 
+}
+header {
+    min-height: 100vh;
+    background: url('../img/headerbg.jpg') center/cover;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+#strip {
+    position: absolute;
+    height: 150px;
+    background: #fd634d4d;
+    width: 120%;
+    bottom: 0;
+    clip-path: polygon(0 84%, 100% 60%, 100% 100%, 0 100%);
+}
+
+section {
+    min-height: 100vh;
+    background: url('../img/footerbg.jpg') center/cover;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    display: grid;
+    place-items: center;
+}
+section .section-text{
+    color: #fff;
+    width: 50%;
+}
+.section-text h2, .section-text h5{
+    padding: 10px;
+    text-transform:none;
+    line-height: 1.5;
+}
+nav, #title { position: absolute; width: 100% }
+nav {top: 40px;}
+nav ul {padding: 20px 0}
+nav ul li a {
+    font: .8em Lato, sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+}
+#title { bottom: 16.7vh }
+h1, h2, h3, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+}
+h1 { font-size: 2em }
+h2 { font-size: 2em }
+h5 { font-size: 1em }
+h3 { font-size: 1.5em; text-transform: capitalize; }
+h6 { font: bold .8em Montserrat; }
+
+.bggreen { background-color: var(--green) }
+.bgred { background-color: var(--red) }
+.bgwhite { background-color: #fff }
+.bgblack { background:#0d1119; padding-bottom: 100px;}
+.txtgreen { color: var(--green) }
+.txtred { color: var(--red) }
+.txtwhite { color: #fff }
+.txtblack {color: black; padding-bottom: 40px;}
+.txtcenter { text-align: center }
+.vh50 { min-height: 50vh }
+.pb20{padding-bottom: 20px;}
+.pb40 {padding-bottom: 40px;}
+.padding { padding: 60px 40px }
+.articles { padding: 70px 0 }
+.articles .col25 { padding: 35px 20px }
+
+#fitnessfirst { background: url('../img/fitnessfirst.jpg') center/cover }
+#yourbody { background: url('../img/yourbody.jpg') center/cover }
+#lifestyle { background: url('../img/lifestyle.jpg') center/cover }
+#summeroffun { background: url('../img/summeroffun.jpg') center/cover }
+#grape { background: url('../img/grape.jpg') center/cover }
+#mango { background: url('../img/mango.jpg') center/cover }
+
+
+.item { padding: 20px; }
+.item h5, p { color: #fff; margin-top: 20px; padding: 0; }
+.row_icons { display: flex; justify-content: space-between; }
+.row_icons i { 
+    font-size: 2em;
+    margin: 15px 15px 0 0; 
+    color: #fff;
+}
+#btn_newsletter { background-color: #a1c927; color: #fff; max-width: 180px; text-align: center; padding: 15px 20px; border-radius: 10px;}
+#btn_newsletter:hover { background-color: #fff; color: #a1c927; }
+.input_div { 
+    padding: 50px 20px; 
+    display: flex;
+    flex-direction: column;
+}
+input { 
+    max-width: 200px;
+    padding: 15px 20px;
+    margin: 5px 0;
+    border-radius: 10px;
+}
+.fa-linkedin-in:hover { color: #00fcfc }
+.fa-instagram:hover { color: #9c0101 }
+.fa-facebook:hover { color: blue}
+.fa-twitter:hover { color: rgb(10, 141, 202) }
+.fa-droplet{color: #e3e9e9;}
+
+
+
+@media only screen and (min-width: 768px) {
+    header { text-align: initial; }
+    nav { padding: 0 50px }
+    nav ul { float: right}
+    nav ul li { display: inline-block; padding: 0 1.9vw }
+    #title { width: initial; left: 7.2%; text-align: right;}
+    h1 { font-size: 2.5em }
+    h2 { font-size: 2.2em }
+    h5 { padding: 8px 23px }
+
+    .container { max-width: 1180px; margin: auto }
+    .row:after { content: ''; display: table; clear: both }
+    .col25 { width: 25% }
+    .col33 { width: 33.33% }
+    .col66 { width: 66.66% }
+    .fleft { float: left }
+    .fright { float: right }
+
+    .row_five {
+        display: flex;
+    }
+    input { 
+        max-width: 200px;
+    }
+    .input_div { 
+        padding-left: 120px;
+        max-width: 700px;
+        margin: auto;
+        flex-direction: inherit;
+     }
+
+    .bgblack .container {
+        display: table;
+        content: '';
+        clear: both;
+    }
+}
